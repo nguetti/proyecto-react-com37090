@@ -5,7 +5,7 @@ const Dropdown = () => {
         
           <li className="nav-item dropdown">
                           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Productos
                           </a>
                           <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#">Action</a></li>

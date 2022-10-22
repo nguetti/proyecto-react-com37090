@@ -1,7 +1,8 @@
 import './navbar.css'
-import FormBusqueda from '../FormBusqueda/FormBusqueda'
 import Dropdown from './Dropdown/Dropdown'
 import CartWidget from '../CartWidget/CartWidget'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
     return (
 
@@ -13,19 +14,40 @@ const Navbar = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon" />
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent" >
                       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                           <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">IconoCarrito</a> //poner aca el icono del carrito
-                        </li>
                         <Dropdown/>
-                        <CartWidget/>
-                      </ul>
-                      <FormBusqueda busqueda={"Buscar Productos"}/>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Hombre</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Mujer</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Unisex</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Ventas mayoristas</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Quiénes somos</a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        
+                        
+                      </ul>                       
                     </div>
+
+                    <ul className='navbar-nav me-auto'>
+                      <li className='nav-item'>
+                        <a className='nav-link' href="#"><button className='btn'><FontAwesomeIcon icon={faCartShopping}/></button></a>
+                      </li>
+                    </ul>
                   </div>
                 </nav>
                 </>
