@@ -1,0 +1,21 @@
+.btn.white  {
+    color: white
+}
+
+.btn.white:hover {
+    color: greenyellow
+}
+
+.navbar-brand {
+    color: red;
+}
+.navbar-brand:hover {
+    color: red;
+}
+.navbar-brand:focus {
+    color: red;
+}
+
+.nav-link.active:hover {
+    color: greenyellow
+}

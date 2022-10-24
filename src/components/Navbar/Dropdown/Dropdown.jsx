@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dropdown.css'
 
 const Dropdown = () => {
     return (
@@ -8,10 +9,11 @@ const Dropdown = () => {
                             Productos
                           </a>
                           <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                            <li><a className="dropdown-item" href="#">Hombre</a></li>
+                            <li><a className="dropdown-item" href="#">Mujer</a></li>
+                            <li><a className="dropdown-item" href="#">Unisex</a></li>
+                            {/* <li><hr className="dropdown-divider" /></li> */}
+                           
                           </ul>
                         </li>   
         
