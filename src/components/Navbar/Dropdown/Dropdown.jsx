@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link, NavLink} from 'react-router-dom'
 import './Dropdown.css'
 
 const Dropdown = () => {
@@ -9,9 +10,9 @@ const Dropdown = () => {
                             Productos
                           </a>
                           <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Hombre</a></li>
-                            <li><a className="dropdown-item" href="#">Mujer</a></li>
-                            <li><a className="dropdown-item" href="#">Unisex</a></li>
+                            <li><NavLink className="dropdown-item" to='/category/1'>Hombre</NavLink></li>
+                            <li><NavLink className="dropdown-item" to='/category/2'>Mujer</NavLink></li>
+                            <li><NavLink className="dropdown-item" to='/category/3'>Unisex</NavLink></li>
                             {/* <li><hr className="dropdown-divider" /></li> */}
                            
                           </ul>

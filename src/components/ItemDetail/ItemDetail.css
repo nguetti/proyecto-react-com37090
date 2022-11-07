@@ -1,0 +1,33 @@
+
+.img-fluid {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 200px;
+}
+
+.row{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.card-body {
+    padding: 10%;
+}
+
+.col-md-4{
+    display:flex;
+    align-items: center;
+}
+
+.btn.btn-primary{
+
+    border-radius: 50%;
+    margin: 3px
+}
+
+div.col-md-8 {
+    width: 200px
+}

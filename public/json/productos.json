@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Boxer",
+        "marca": "Zorba",
+        "modelo": "Art. 130",
+        "precio": 700,
+        "stock": 30,
+        "img": "1.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 3,
+        "nombre": "Medias",
+        "marca": "Poker",
+        "modelo": "Art. 501",
+        "precio": 290,
+        "stock": 20,
+        "img": "2.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 2,
+        "nombre": "Corpiño dep.",
+        "marca": "Mercury",
+        "modelo": "Art. 209",
+        "precio": 1700,
+        "stock": 15,
+        "img": "3.jpg"
+    },
+    {
+        "id": 4,
+        "idCategoria": 3,
+        "nombre": "Medias de vestir",
+        "marca": "Poker",
+        "modelo": "Art. 502",
+        "precio": 420,
+        "stock": 30,
+        "img": "4.jpg"
+    },
+    {
+        "id": 5,
+        "idCategoria": 2,
+        "nombre": "Vedetina",
+        "marca": "Mercury",
+        "modelo": "Art. 202",
+        "precio": 580,
+        "stock": 7,
+        "img": "5.jpg"
+    },
+    {
+        "id": 6,
+        "idCategoria": 1,
+        "nombre": "Boxer microfibra",
+        "marca": "Zorba",
+        "modelo": "Art. 141",
+        "precio": 650,
+        "stock": 20,
+        "img": "6.jpg"
+    },
+    {
+        "id": 7,
+        "idCategoria": 2,
+        "nombre": "Corpiño c/bretel",
+        "marca": "Cocot",
+        "modelo": "Art. 2025",
+        "precio": 1500,
+        "stock": 10,
+        "img": "7.jpg"
+    },
+    {
+        "id": 8,
+        "idCategoria": 3,
+        "nombre": "Medias futbol",
+        "marca": "Joma ",
+        "modelo": "Art. 560",
+        "precio": 1150,
+        "stock": 30,
+        "img": "8.jpg"
+    },
+    {
+        "id": 9,
+        "idCategoria": 1,
+        "nombre": "Boxer algodón",
+        "marca": "Dufour",
+        "modelo": "Art. 1050",
+        "precio": 920,
+        "stock": 21,
+        "img": "9.jpg"
+    },
+    {
+        "id": 10,
+        "idCategoria": 2,
+        "nombre": "Camiseta algodón",
+        "marca": "Mora",
+        "modelo": "Art. 3030",
+        "precio": 1300,
+        "stock": 25,
+        "img": "10.jpg"
+    }
+    
+]
