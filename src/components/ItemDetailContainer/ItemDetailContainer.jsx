@@ -1,7 +1,11 @@
 
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import {useParams} from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import {getProductos} from '../../assets/firebase'
+import { getProducto } from '../../assets/firebase';
+
+
 import { consultarBDD } from '../../assets/funciones';
 import './ItemDetailContainer.css'
 
@@ -9,17 +13,17 @@ import './ItemDetailContainer.css'
 const ItemDetailContainer = () => {
     
     const [producto, setProducto] = useState([])
-    const {itemId} = useParams() 
-
+    const {id} = useParams() 
 
     useEffect(() => {
-        consultarBDD('../../json/productos.json').then(productos=>{
-            const prod = productos.find(productoArray => productoArray.id === parseInt(itemId))
+        getProducto(id).then(prod => {
             setProducto(prod)
+        
         })
     },[])
     
     return (
+        
         <div className='detalleContainer'>
             <div className=" card mb-3 container detalleProducto">
                 <ItemDetail producto={producto}/>

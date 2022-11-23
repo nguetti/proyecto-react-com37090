@@ -1,7 +1,7 @@
 //import {} from 'react';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import ItemList from '../ItemList/ItemList'
-import {consultarBDD} from '../../assets/funciones.js'
+import {getProductos} from '../../assets/firebase.js'
 import { useParams } from 'react-router-dom';
 import './ItemListContainer.css'
 const ItemListContainer = () => {
@@ -12,14 +12,14 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         if(category) {
-            consultarBDD('../json/productos.json').then(products => {
+            getProductos().then(products => {
                 const productsList= products.filter(prod => prod.idCategoria === parseInt(category))
                 console.log(productsList)
                 const cardProductos = ItemList({productsList})
                 setProductos(cardProductos)
             })
         } else {
-            consultarBDD('./json/productos.json').then(productsList => {
+            getProductos().then(productsList => {
                 const cardProductos = ItemList({productsList})
                 setProductos(cardProductos)
             })
@@ -28,7 +28,7 @@ const ItemListContainer = () => {
     },[category]);
     
     return (
-        <div className='row'>
+        <div className='row' >
             {productos}
         </div>
        

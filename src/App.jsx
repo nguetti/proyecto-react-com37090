@@ -1,21 +1,34 @@
 import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify';
+
+//Context
+import { CartContextProvider } from './context/CartContext'
+
+//Components
 import Navbar from './components/Navbar/Navbar';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Checkout from './components/Checkout/Checkout';
 const App = () => {
   
   return (
     <>
       <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/product/:itemId' element={<ItemDetailContainer/>}/>
-          <Route path='/cart' element={<Cart/>}/>
-          <Route path='/category/:category' element={<ItemListContainer/>}/>
-        </Routes>
+        <CartContextProvider>
+          <Navbar/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer/>}/>
+            <Route path='/product/:id' element={<ItemDetailContainer/>}/>
+            <Route path='/cart' element={<Cart/>}/>
+            <Route path='/category/:category' element={<ItemListContainer/>}/>
+            <Route path='/checkout' element={<Checkout/>}></Route> 
+            <Route path='/product/*' element={<h1>Producto no encontrado</h1>}/>
+          </Routes>
+          <ToastContainer/>
+          </CartContextProvider>   
       </BrowserRouter>
       
     </>

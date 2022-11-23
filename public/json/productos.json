@@ -7,7 +7,7 @@
         "modelo": "Art. 130",
         "precio": 700,
         "stock": 30,
-        "img": "1.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/1.jpg?alt=media&token=71e85c9a-18dc-4bfc-82d7-3380871ef9ea"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "modelo": "Art. 501",
         "precio": 290,
         "stock": 20,
-        "img": "2.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/2.jpg?alt=media&token=443a8642-c73e-4031-bd5e-b474ab554940"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "modelo": "Art. 209",
         "precio": 1700,
         "stock": 15,
-        "img": "3.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/3.jpg?alt=media&token=fcca9618-7247-4e40-85bd-e3b191f90f2f"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "modelo": "Art. 502",
         "precio": 420,
         "stock": 30,
-        "img": "4.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/4.jpg?alt=media&token=213a541e-9ccb-4971-9714-c2b5937e67f9"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "modelo": "Art. 202",
         "precio": 580,
         "stock": 7,
-        "img": "5.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/5.jpg?alt=media&token=593ad399-034c-42f6-bd1f-d1494cae515f"
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@
         "modelo": "Art. 141",
         "precio": 650,
         "stock": 20,
-        "img": "6.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/6.jpg?alt=media&token=30d83a06-f49b-4b84-8796-97938c2ed8bf"
     },
     {
         "id": 7,
@@ -67,7 +67,7 @@
         "modelo": "Art. 2025",
         "precio": 1500,
         "stock": 10,
-        "img": "7.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/7.jpg?alt=media&token=3f7d90d2-aa16-4b03-a6f9-071eea226e5b"
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@
         "modelo": "Art. 560",
         "precio": 1150,
         "stock": 30,
-        "img": "8.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/8.jpg?alt=media&token=a7135fbd-f718-4020-864f-d6a9ed1662a2"
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@
         "modelo": "Art. 1050",
         "precio": 920,
         "stock": 21,
-        "img": "9.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/9.jpg?alt=media&token=04f6684c-35d0-45a6-9b92-ecce06100035"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@
         "modelo": "Art. 3030",
         "precio": 1300,
         "stock": 25,
-        "img": "10.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-23b08.appspot.com/o/10.jpg?alt=media&token=f13ff453-7389-4b69-9fea-636ae33f409c"
     }
     
 ]

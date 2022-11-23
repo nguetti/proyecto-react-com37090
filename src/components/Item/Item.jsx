@@ -7,7 +7,7 @@ const Item = ({prod}) => {
         <div>
             <div className="card cardProducto" style={{width: '18rem'}}>
                   <div className="containerImg">
-                  <img className="card-img-top" src={`../img/${prod.img}`} alt="..." />
+                  <img className="card-img-top" src={prod.img} alt="..." />
                   </div>
                   <div className="card-body">
                     <h5 className="card-title">{prod.nombre}</h5>

@@ -1,10 +1,11 @@
+import React from 'react'
 import './navbar.css'
 import {Link} from 'react-router-dom'
 import Dropdown from './Dropdown/Dropdown'
 import CartWidget from '../CartWidget/CartWidget'
 
 import { ButtonToggle } from 'reactstrap'
-const Navbar = () => {
+const Navbar = React.memo(() => {
     return (
 
             <>
@@ -41,6 +42,6 @@ const Navbar = () => {
                 </nav>
                 </>
         )
-    }
+    })
 
     export default Navbar

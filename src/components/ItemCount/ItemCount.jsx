@@ -1,29 +1,22 @@
 import {useState} from 'react';
 
-const ItemCount = (props) => {
-       const [contador, setContador] = useState(props.initial)       //valor inicial
-       const modificarContador = (operacion) => {
-            
-            if(operacion === "+"){
+const ItemCount = ({stock, onAdd}) => {
+    const [contador, setContador] = useState(1) //valor inicial
 
-                
-                if(contador < props.stock){
-                setContador(contador + 1)
-                
-            }
-            } else {
-                if(contador > 1){
-                setContador(contador - 1)
-            }
-        }
-       }
+    const agregarAlCarrito = () => {
+        onAdd(contador)
+    }
 
+    const incrementar = () => contador < stock && setContador(contador + 1)
+
+    const decrementar = () => contador > 1 && setContador(contador - 1)
+    
     return (
         <>
-          <button onClick={()=> modificarContador("-")} id="boton2" className='btn btn-primary'>-</button>
-          {contador}
-          <button onClick={()=> modificarContador("+")} id="boton1" className='btn btn-primary'>+</button>
-                     
+            <button onClick={decrementar} className='btn btn-light botItem'><i class="fas fa-minus"></i></button>
+                    {contador}
+            <button onClick={incrementar} className='btn btn-light botItem'><i class="fas fa-plus"></i></button>
+            <button className="btn btn-dark" onClick={agregarAlCarrito}><i class="fas fa-cart-plus"></i></button>
         </>
     );
 }
