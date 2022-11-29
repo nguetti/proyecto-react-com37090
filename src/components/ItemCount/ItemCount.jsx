@@ -13,6 +13,7 @@ const ItemCount = ({stock, onAdd}) => {
     
     return (
         <>
+            <p className='card-text'>Cantidad: </p>
             <button onClick={decrementar} className='btn btn-light botItem'><i class="fas fa-minus"></i></button>
                     {contador}
             <button onClick={incrementar} className='btn btn-light botItem'><i class="fas fa-plus"></i></button>

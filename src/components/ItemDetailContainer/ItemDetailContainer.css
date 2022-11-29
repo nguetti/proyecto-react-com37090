@@ -4,3 +4,12 @@
     margin: 2% 10% 5%
 }
 
+h1.notFound{
+    text-align: center;
+    color: red;
+    margin: 4%;
+}
+
+button.vermas {
+    text-align: center;
+}

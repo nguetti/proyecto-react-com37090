@@ -10,6 +10,8 @@
 .cardProducto {
     width: 18rem;
     margin: 15px 4px 4px;
+    padding: 10px;
+ 
 }
 
 .itemDetail {
@@ -21,6 +23,74 @@
 .darkMode{
     background-color: black;
     color: antiquewhite;
+}
+
+body {
+    background-color: whitesmoke;
+}
 
 
+button.btn-primary{
+    color: black;;
+    border-radius: 8px;
+    background-color: gainsboro;
+}
+
+button.btn-danger{
+    color: black;;
+    border-radius: 8px;
+    background-color:rgb(252, 94, 94)
+}
+
+button.btn-primary:hover{
+    background-color: purple;
+    color: white;
+}
+
+button.btn-primary.finalizar{
+    margin: 20px 0 60px 0;
+}
+button.btn-primary.finalizar:hover{
+    background-color: rgb(0, 97, 40);
+    color: white;
+}
+
+
+
+button.btn-secondary{
+    border-radius: 8px;
+    background-color: gainsboro;
+}
+
+
+
+button.btn-secondary:hover{
+    background-color: purple;
+    color: white;
+}
+
+button.btn.btn-dark{
+    border-radius: 8px;
+}
+
+button.btn.btn-dark:hover{
+    background-color: purple;
+    color: white;
+    
+}
+input.form-control{
+    color:rgb(85, 85, 85);
+    font-weight: 400;
+}
+
+    
+input.form-control:hover {
+    border-color: rgb(110, 34, 182);
+    
+}
+input.form-control:focus {
+    background-color: rgb(110, 34, 182);
+    color: white;
+    
+    
 }

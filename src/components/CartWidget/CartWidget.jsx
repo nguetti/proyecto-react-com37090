@@ -10,8 +10,13 @@ const CartWidget = () => {
             <ul className='navbar-nav me-auto'>
                       <li className='nav-item'>
                         <Link className="nav-link" to='/cart'>
-                            <p>{getItemQuantity()}</p>
-                            <button className='btn white' ><FontAwesomeIcon icon={faCartShopping}/> </button>
+                            {/* <p>{getItemQuantity()}</p> */}
+                            <button className='btn white' >
+                            { getItemQuantity() >= 1 && <span className="cantCarrito">{getItemQuantity()}</span>}
+                            <span>{"  "}</span>
+                            <FontAwesomeIcon icon={faCartShopping}/>
+                                
+                            </button>
 
                         </Link>
                         

@@ -17,4 +17,6 @@ div.containerImg {
 div.card.cardProducto {
     display: flex;
     align-items: center;
+    box-shadow: 10px;
 }
+

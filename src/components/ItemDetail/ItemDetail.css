@@ -24,10 +24,21 @@
 
 .btn.btn-primary{
 
-    border-radius: 50%;
     margin: 3px
 }
 
 div.col-md-8 {
     width: 200px
+}
+
+button{
+    margin: 2px;
+}
+
+p.card-text{
+    margin-bottom: 5px;
+}
+
+a.nav-link.detail {
+    font-size: 15px;
 }
