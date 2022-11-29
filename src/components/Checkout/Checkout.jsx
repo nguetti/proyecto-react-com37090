@@ -3,20 +3,25 @@ import { useNavigate, Link } from "react-router-dom";
 import { createOrdenCompra, getProducto, updateProducto } from "../../assets/firebase"
 import { CartContext } from "../../context/CartContext"
 import {toast } from 'react-toastify';
+import { useState } from "react"; //////////////////////////////////////////////////////////
 
 const Checkout = () => {
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
     const {cart,emptyCart, totalPrice} = useContext(CartContext);
 
+    const [errores,setErrores] = useState('')
+
     const consultarFormulario = (e) => {
         e.preventDefault()
         const datForm = new FormData(datosFormulario.current)
         const valores = Object.fromEntries(datForm)
         if(valores.email != valores.email2){
-            return alert("los emails no coinciden")
-           
+            setErrores('Los emails ingresados no coinciden')
+            return
         }
+
+
         const aux = [...cart]
         aux.forEach(producto => {
             getProducto(producto.id)
@@ -40,6 +45,20 @@ const Checkout = () => {
     
     }
 
+    const emails = (e) => {
+        const datForm = new FormData(datosFormulario.current)
+        const valores = Object.fromEntries(datForm)
+        if(valores.email != valores.email2){
+            setErrores('Los emails ingresados no coinciden')
+            return
+        }
+        if(valores.email == valores.email2){
+            setErrores('')
+            
+        }
+        
+    }
+
     return (
         <div className="container">
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
@@ -58,7 +77,8 @@ const Checkout = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Repetir email</label>
-                    <input type="email" className="form-control" name="email2" required/>
+                    <input type="email" className="form-control" name="email2" onChange={emails} required/>
+                    <p className="errores">{errores}</p>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="dni" className="form-label">DNI</label>

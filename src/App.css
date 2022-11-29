@@ -94,3 +94,8 @@ input.form-control:focus {
     
     
 }
+
+.errores {
+    color: red;
+    
+}
