@@ -10,8 +10,10 @@ const Cart = () => {
         
         {cart.length === 0 ?
          <div>
-            <p>Tu Carrito está vacío</p>
+            <h1 className='carritoVacio'>¡Tu carrito está vacío!</h1>
+            <div className='vacio'>
             <Link to={'/'}><button className='btn btn-dark'>Ir al inicio</button></Link>
+            </div>
          </div>
          :
          <div className='contenedorCart'>

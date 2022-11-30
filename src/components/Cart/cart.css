@@ -8,3 +8,19 @@ p.totall {
 .contenedorCart{
     margin: 30px
 }
+
+h1.carritoVacio {
+    color: blueviolet ;
+    padding: 30px;
+    text-align: center;
+}
+button.btn.btn-dark.btn-vacio{
+    font-size: 30px;
+    background-color: blueviolet;
+}
+.vacio {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+
+}
